@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@font-face {
+    font-family: 'Alegrey';
+    src: url(fonts/AlegreyaSansSC-Black.ttf) format(truetype);
+}
+
+:root {
+    --fonte-tit: 'Alegrey', cursive;
+    --fonte-sec: Arial, Helvetica, sans-serif;
+    --fonte-txt: 'Sriracha', cursive;
+}
+
+.link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    background-color: wheat;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    min-height: 20vh;
+}
+
+header > h1 {
+    font-size: 8vw;
+    font-family: var(--fonte-tit);
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding-top: 50px;
+}
+
+header > p {
+    font-family: var(--fonte-sec);
+    color: white;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+section.sfundo {
+    margin-left: 40px;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    min-width: 20vw;
+}
+
+article.sfundo {
+    font-size: 3.2vw;
+    font-family: var(--fonte-txt);
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 7.1vw;
+}
+
+section.cfundo1 {
+    position: relative;
+
+    box-shadow: inset 4px 5px 10px 0px rgb(0 0 0 / 52%);
+    background-image: url(imgs/background001.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-height: 75vw;
+}
+
+section.cfundo2 {
+    position: relative;
+
+    box-shadow: inset 4px 5px 10px 0px rgb(0 0 0 / 52%);
+    background-image: url(imgs/background002.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-height: 75vw;
+}
+
+article.cfundo {
+    position: absolute;
+    top: 50%;
+    left: 5vh;
+    transform: translate(0%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.432);
+    text-shadow: 2px 2px 2px black;
+    width: 47vw;
+    margin-left: -10px;
+    color: white;
+    font-size: 3.2vw;
+    font-family: var(--fonte-txt);
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 7.1vw;
+}
+
+article.cfundo > p {
+    margin: -2px 0px -2px 10px ;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+aside > p {
+    padding: 10px;
+    margin: 0;
+    font-family: var(--fonte-sec);
+}
